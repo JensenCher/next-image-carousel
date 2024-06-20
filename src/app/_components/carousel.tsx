@@ -29,12 +29,8 @@ export default function Carousel({ images }: CarouselProps) {
               className="flex"
             >
               {images.map((image) => (
-                <div className="w-full aspect-[3/2] shrink-0">
-                  <img
-                    key={image}
-                    src={image}
-                    className="w-full h-full object-contain"
-                  />
+                <div className="w-full aspect-[3/2] shrink-0" key={image}>
+                  <img src={image} className="w-full h-full object-contain" />
                 </div>
               ))}
             </motion.div>
